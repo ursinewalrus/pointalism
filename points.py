@@ -6,6 +6,6 @@ import painter
 
 file_path = askopenfilename()
 
-painter = painter.Painter(5, False, file_path)
-p = painter.find_point_average_rgb()
+painter = painter.Painter(4, False, file_path, False)
+painter.paint_picture_with_points()
 a = 1
