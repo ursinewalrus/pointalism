@@ -25,7 +25,7 @@ class Painter:
         distance = 2 if overlap else 1
         points = {}
         for w in range(self.point_radius, self.image_width - self.point_radius, self.point_radius * distance):
-            for h in range(self.point_radius, self.image_width - self.point_radius, self.point_radius * distance):
+            for h in range(self.point_radius, self.image_height - self.point_radius, self.point_radius * distance):
                 points[str(w) + "-" + str(h)] = []
         return points
 
